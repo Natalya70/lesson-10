@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color:rgb(20, 20, 35);
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.cube {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10%;
+    background-color: gainsboro;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second {
+    display: flex;
+    justify-content: space-between;
+}
+.second .circle:last-child {
+    align-self: flex-end;
+}
+
+.third {
+    display: flex;
+    justify-content: space-between;
+}
+
+.third .circle:nth-child(2) {
+    align-self: center;
+}
+
+.third .circle:last-child {
+    align-self: flex-end;
+}
+.fourth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px 30px;
+}
+
+.fifth {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fifth .circle:nth-child(3) {
+    justify-content: center;
+    align-self: center;
+}
+
+.fifth .circle:first-child {
+    align-self: flex-end;
+}
+
+.fifth .circle:last-child {
+    align-self: flex-end;
+}
+
+.sixth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 30px;
+}
